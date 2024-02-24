@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP2</title>
+    <script src="https://kit.fontawesome.com/a17ec9ee8e.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png"
+        href="https://play-lh.googleusercontent.com/3hXacqTn2RQ1vXTOdlNWlkFFmjT7cwa0ISjjgWDViLKFmHFo0Ta0v3m9CakkzlF72w">
+    </link>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+    body {
+        font-family: 'Inter';
+    }
+
+    header {
+        background-color: #007c31;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav a:hover {
+        color: #ddd;
+    }
+
+    nav a.active {
+        padding: 5px;
+        border-radius: 2.5px;
+        background-color: #00ca51;
+        color: black;
+    }
+
+    main {
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #02ac46;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .redes-sociales {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .redes-sociales li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .redes-sociales li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .redes-sociales li a:hover {
+        color: #ddd;
+    }
+
+    .fa {
+        font-size: 20px;
+    }
+
+    .iconos-seccion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .iconos-seccion img {
+        width: 100%;
+    }
+
+    .columna {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 200px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .columna:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .columna i {
+        font-size: 3em;
+        margin-bottom: 10px;
+        color: #444;
+    }
+
+    .columna h3 {
+        font-size: 1.2em;
+        margin: 5px 0;
+        color: #000;
+    }
+
+    .columna p {
+        font-size: 0.9em;
+        margin: 0;
+        color: #777;
+    }
+
+
+    .objeto {
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .capa-texto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .objeto:hover .capa-texto {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.01);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .objeto:hover .img-banner {
+        transform: scale(1.01);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .img-banner{
+        width: 800px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://play-lh.googleusercontent.com/3hXacqTn2RQ1vXTOdlNWlkFFmjT7cwa0ISjjgWDViLKFmHFo0Ta0v3m9CakkzlF72w"
+                    alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <a id="inicio" href="index.html">Inicio</a>
+            <a id="pagina1" href="pagina1.html">Ligas</a>
+            <a id="pagina2" href="pagina2.html">Clasicos</a>
+            <a id="pagina3" href="pagina3.html">Mundiales</a>
+            <a id="pagina4" href="pagina4.html">America</a>
+        </nav>
+    </header>
+    <main>
+        <h4>Competiciones en America</h4>
+        <section class="iconos-seccion">
+            <div class="columna">
+                <img src="https://static.wikia.nocookie.net/logopedia/images/6/68/Copa-america-2021-verticalnegro.png/revision/latest?cb=20210531192407&path-prefix=es"
+                    alt="..." />
+            </div>
+            <div class="columna">
+                <img src="https://brandemia.org/sites/default/files/inline/images/libertadores_nuevo_logo_conmebol_copia.jpg"
+                    alt="..." />
+            </div>
+            <div class="columna">
+                <img src="https://www.conmebol.com/wp-content/uploads/2017/02/conmebol-sudamericana.png" alt="..." />
+            </div>
+            <div class="columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Concacaf_Gold_Cup_2021.svg"
+                    alt="..." />
+            </div>
+            <div class="columna">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="https://logowik.com/content/uploads/images/lpf-liga-profesional-de-futbol-de-argentina5807.logowik.com.webp" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="data:image/png;base64,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" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Liga_de_F%C3%BAtbol_Profesional_-_Liga_1_%28Per%C3%BA%29.jpg" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Ligabolivia.png" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-division-de-honor.png" alt="..." />
+            </div>
+
+            
+            <div class="columna">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1592.png" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1543.png" alt="..." />
+            </div>
+
+            <div class="columna">
+                <img src="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1944.png" alt="..." />
+            </div>
+
+        </section>
+
+        <div class="objeto">
+            <img class="img-banner"
+                src="https://www.tvperu.gob.pe/sites/default/files/styles/note/public/universitario_vs_alianza_lima.jpg?itok=lsB4ptYk"
+                alt="Imagen">
+            <span class="capa-texto">Universitario vs Alianza Lima</span>
+        </div>
+        <div class="objeto">
+            <img class="img-banner"
+                src="https://depor.com/resizer/DA6GFKT3__RZkwWGN3IRJMDKoqQ=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/HIW2JPHBIVH6TMWGX3EEXPKYWA.jpg"
+                alt="Imagen">
+            <span class="capa-texto">River Plate vs Boca Juniors</span>
+        </div>
+        <div class="objeto">
+            <img class="img-banner"
+                src="https://elcomercio.pe/resizer/lOvFI6v8y-Ik8KYWW5h5MaCieR0=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/YZL7LOH2MNCZDE7U6Y7JK4JMMQ.jpg"
+                alt="Imagen">
+            <span class="capa-texto">Colo Colo vs U. de Chile</span>
+        </div>
+        <div class="objeto">
+            <img class="img-banner"
+                src="https://img.vavel.com/c1200_675_corinthians-flamengo-1660010933560.jpg"
+                alt="Imagen">
+            <span class="capa-texto">Flamengo vs Corinthians</span>
+        </div>
+
+    </main>
+
+    <script>
+        const links = document.querySelectorAll('nav a');
+
+        for (const link of links) {
+            link.addEventListener('click', function () {
+
+                const id = this.getAttribute('id');
+
+                localStorage.setItem('currentPage', id);
+
+                for (const link of links) {
+                    link.classList.remove('active');
+                }
+
+                if (id === "inicio") {
+                    document.getElementById("inicio").classList.add('active');
+                } else if (id === "pagina1") {
+                    document.getElementById("pagina1").classList.add('active');
+                } else if (id === "pagina2") {
+                    document.getElementById("pagina2").classList.add('active');
+                } else if (id === "pagina3") {
+                    document.getElementById("pagina3").classList.add('active');
+                } else if (id === "pagina4") {
+                    document.getElementById("pagina4").classList.add('active');
+                }
+            });
+        }
+
+        const logo = document.querySelector('.logo a');
+        logo.addEventListener('click', function () {
+            localStorage.setItem('currentPage', 'inicio');
+            document.getElementById("inicio").classList.add('active');
+        });
+
+        const currentPage = localStorage.getItem('currentPage');
+        if (currentPage) {
+            const currentLink = document.getElementById(currentPage);
+            if (currentLink) {
+                currentLink.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+<footer>
+    <p>Copyright &copy; 2023</p>
+    <ul class="redes-sociales">
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+    </ul>
+</footer>
+
+</html>
